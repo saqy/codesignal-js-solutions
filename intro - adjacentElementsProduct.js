@@ -4,6 +4,5 @@ function adjacentElementsProduct(inputArray) {
              return el * arr[index+1];
              }
      }).sort( (a,b) =>{ return b - a})[0];
-     console.log(product);
      return product;
 }
