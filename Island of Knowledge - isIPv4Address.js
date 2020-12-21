@@ -19,6 +19,5 @@ function isIPv4Address(inputString) {
     })
     .every((v) => v === true);
 
-  console.log(result);
   return result;
 }
