@@ -1,8 +1,8 @@
 function arrayChange(inputArray) {
-  let flag = true;
+  let isChange = true;
   let count = 0;
   let i = 0;
-  while (flag) {
+  while (isChange) {
     if (inputArray[i] >= inputArray[i + 1]) {
       inputArray[i + 1] = inputArray[i + 1] + 1;
       count++;
@@ -10,7 +10,7 @@ function arrayChange(inputArray) {
       i++;
     }
     if (i === inputArray.length - 1) {
-      flag = false;
+      isChange = false;
     }
   }
   return count;
